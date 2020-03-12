@@ -8,42 +8,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get -yq dist-upgrade \
  && apt-get install -yq --no-install-recommends \
     build-essential \
-    gcc-multilib \
     apt-utils \
-    autotools-dev \
-    autoconf \
-    autogen \
-    automake \
-    zlib1g-dev \
-    vim-common \
-    libncurses5-dev \
-    autotools-dev \
-    autoconf \
-    perl \
-    r-base \
-    python \
-    python-pip \
-    libbz2-dev \
-    liblzma-dev \
-    libz-dev \
-    ncurses-dev \
-    libcurl3 \
-    libcurl4-openssl-dev \
-    libxml2-dev \
     wget \
-    bzip2 \
-    ca-certificates \
-    sudo \
-    locales \
-    fonts-liberation \
-    python3 \
-    python3-pip \
-    pkg-config \
-    python-dev \
-    graphviz \
-    libgraphviz-dev \ 
-    libtool \
-    libgd-gd2-perl \
     nano \
     curl \
  && apt-get clean \
