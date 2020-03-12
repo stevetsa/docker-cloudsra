@@ -18,5 +18,8 @@ RUN apt-get update && apt-get -yq dist-upgrade \
 WORKDIR /opt/
 RUN wget --no-check-certificate http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.10.4/sratoolkit.2.10.4-ubuntu64.tar.gz
 RUN tar -xzf sratoolkit.2.10.4-ubuntu64.tar.gz
-WORKDIR /opt/sratoolkit.2.10.4-ubuntu64
-ENV PATH "$PATH:/opt//sratoolkit.2.10.4-ubuntu64/bin/"
+ENV PATH "$PATH:/opt/sratoolkit.2.10.4-ubuntu64/bin/"
+
+WORKDIR /opt/
+RUN wget --no-check-certificate http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.9.6-1/sratoolkit.2.9.6-1-ubuntu64.tar.gz
+RUN tar -xzf sratoolkit.2.9.6-1-ubuntu64.tar.gz
